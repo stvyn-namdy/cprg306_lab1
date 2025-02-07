@@ -5,29 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unit Converter</title>
+   <!-- Tailwind CSS for styling -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-[#0f172a] font-sans min-h-screen flex items-center justify-center">
   <div>
+     <!-- Navigation bar -->
     <nav class="bg-zinc-600 p-4 max-w-md w-full rounded mb-6">
       <div class="flex justify-center items-center">
         <h1 class="text-white text-lg font-bold">
+          <!-- Navigation home link -->
           <a href="index.html" class="hover:text-blue-200">Unit Converter</a>
         </h1>
       </div>
+      <!-- Navigation menu -->
       <ul class="flex justify-center space-x-4 mt-4">
         <li><a href="weight.html" class="bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-900">Weight</a></li>
         <li><a href="distance.html" class="bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-900">Distance</a></li>
         <li><a href="temperature.html" class="bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-900">Temperature</a></li>
       </ul>
     </nav>
-
+       <!-- Temperature Conversion Section -->
     <section id="temperature" class="bg-white shadow-md rounded p-6 max-w-md w-full">
       <h2 class="text-center font-bold text-gray-800 mb-4">Temperature Conversion</h2>
       <form>
         <label for="temperatureInput" class="block text-gray-700 text-lg mb-2">Enter Temperature:</label>
         <input id="temperatureInput" type="text" placeholder="Enter value (For Example: 37, 100)" class="w-full p-2 border border-gray-300 rounded mb-4">
+         <!-- Buttons to convert temperature -->
         <div class="grid grid-cols-2 gap-4">
           <button id="toFahrenheit" type="button" class="w-full bg-blue-700 text-white p-2 rounded hover:bg-blue-900">Convert to Fahrenheit</button>
           <button id="toCelsius" type="button" class="w-full bg-blue-700 text-white p-2 rounded hover:bg-blue-900">Convert to Celsius</button>
@@ -36,6 +41,7 @@
       </form>
     </section>
   </div>
+   <!-- JavaScript file for functionality -->
   <script src="script.js"></script>
 </body>
 

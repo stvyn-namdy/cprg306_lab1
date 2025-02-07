@@ -8,40 +8,35 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-  <!-- Navbar -->
-  <body class="bg-gray-100 font-sans">
-    <nav class="bg-zinc-600 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-          <h1 class="text-white text-base font-bold"><a href="index.html" class="text-black hover:text-blue-200">Unit Converter</a></h1>
-          <ul class="flex space-x-4">
-            <li><a href="weight.html" class="text-black hover:text-blue-200">Weight</a></li>
-            <li><a href="distance.html" class="text-black hover:text-blue-200">Distance</a></li>
-            <li><a href="temperature.html" class="text-black hover:text-blue-200">Temperature</a></li>
-          </ul>
-        </div>
-      </nav>
+<body class="bg-[#0f172a] font-sans min-h-screen flex items-center justify-center">
+  <div>
+    <nav class="bg-zinc-600 p-4 max-w-md w-full rounded mb-6">
+      <div class="flex justify-center items-center">
+        <h1 class="text-white text-lg font-bold">
+          <a href="index.html" class="hover:text-blue-200">Unit Converter</a>
+        </h1>
+      </div>
+      <ul class="flex justify-center space-x-4 mt-4">
+        <li><a href="weight.html" class="bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-900">Weight</a></li>
+        <li><a href="distance.html" class="bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-900">Distance</a></li>
+        <li><a href="temperature.html" class="bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-900">Temperature</a></li>
+      </ul>
+    </nav>
 
-
-
-    <!-- Weight Conversion -->
-    <div class="container mx-auto mt-6">
-    <section id="weight" class="mb-8">
+    <section id="weight" class="bg-white shadow-md rounded p-6 max-w-md w-full">
       <h2 class="text-center font-bold text-gray-800 mb-4">Weight Conversion</h2>
-      <form class="bg-white shadow-md rounded p-6">
+      <form>
         <label for="weightInput" class="block text-gray-700 text-lg mb-2">Enter Weight:</label>
         <input id="weightInput" type="text" placeholder="Enter value (For Example: 50, 100)" class="w-full p-2 border border-gray-300 rounded mb-4">
         <div class="grid grid-cols-2 gap-4">
-            <button id="toKg" type="button" class="w-full bg-sky-400 text-white p-2 rounded hover:bg-sky-600">Convert to Kilograms</button>
-            <button id="toLb" type="button" class="w-full bg-sky-400 text-white p-2 rounded hover:bg-sky-600">Convert to Pounds</button>
+          <button id="toKg" type="button" class="w-full bg-blue-700 text-white p-2 rounded hover:bg-blue-900">Convert to Kilograms</button>
+          <button id="toLb" type="button" class="w-full bg-blue-700 text-white p-2 rounded hover:bg-blue-900">Convert to Pounds</button>
         </div>
         <p id="weightOutput" class="text-center font-bold text-gray-700 mt-2"></p>
       </form>
     </section>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
-
-
-
-
-

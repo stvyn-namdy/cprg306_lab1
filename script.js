@@ -26,11 +26,6 @@ const handleConversion = (inputId, fromUnit, toUnit, outputId) => {
         alert("Please enter a valid value.");
         return;
     }
-//Check if a string is parsed
-    if (isNaN(inputValue.replace(/,/g, "").trim())) {
-        alert("Please enter a number.");
-        return;
-    }
 
     // Check if input is an array (comma-separated values)
     const inputArray = inputValue.includes(",") ? inputValue.split(",").map(val => val.trim()) : inputValue;
